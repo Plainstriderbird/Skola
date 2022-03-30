@@ -20,9 +20,10 @@ header{
 }
 
 body{
-  background-color:#b5ebab ;
+  background-color:lightslategrey;
   margin: 0;
   font-family: merriweather, sans-serif;
+
 }
 
 #B{
@@ -30,6 +31,8 @@ body{
 }
 main p{
   font-size: 1em;
+  color: black;
+-webkit-text-stroke: black .5px;
 }
 #contnav{
 
@@ -38,32 +41,14 @@ background-color:rgba(147,209,255,.5) ;
 }
 
 #flexible{
-display: flex;
-
-
-
-}
-
-main{
-flex: .5;
-width: 20em;
+display: block;
+background-color: #b5ebeb;
+padding-bottom: 7.5em;
 
 }
-  
-aside{
-  flex: .5;
-  width: 20em
-}
 
-main p{
-color: black;
--webkit-text-stroke: lightskyblue .5px;
-}
 
-aside p{
-color: black;
--webkit-text-stroke: lightskyblue .5px;
-}
+
 
 
 .dropbtn {
@@ -99,7 +84,7 @@ position: relative;
 
 }
 
-.dropdown-content a:hover {background-color: plum}
+.dropdown-content a:hover {background-color: lightslategray}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -120,8 +105,9 @@ html, body {
 }
 
 .pic-ctn {
-  width: 100vw;
-  height: 200px;
+  width: 300vw;
+  height: 300px;
+  
 }
 
 @keyframes display {
@@ -174,4 +160,4 @@ img:nth-child(4) {
 }
 img:nth-child(5) {
   animation-delay: 8s;
-}
+}}
