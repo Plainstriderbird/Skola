@@ -1,0 +1,210 @@
+@charset    "utf-8";
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #eee;
+}
+
+.header {
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(76, 216, 255, 0.8),
+   rgba(30, 108, 217, 0.8)),
+   url(https://a.cdn-hotels.com/gdcs/production9/d482/99f71ade-8bd5-4646-b0a3-4a5053aaf9a5.jpg);
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+}
+
+.home-hero {
+    display: grid;
+    grid-gap: 1px;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  
+  .home-hero > * {
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .feature {
+    background-image: url(Bilder/Folk_park.jpg);
+    background-position: bottom left;
+    color: #fff;
+  }
+  
+  .foto {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/hero-demo2.jpg); 
+    color: #fff;
+  }
+  
+  .news {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/hero-demo3.jpg); 
+    color: #fff;
+  }
+  
+  .special {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/hero-demo5.jpg); 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .special h3,
+  .amazing h3{
+    margin-top: auto;
+  }
+  
+  .amazing {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/hero-demo4.jpg); 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cta {
+    background-color: rgb(123,14,34);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a.spam-button:link {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 5px;
+    margin: auto auto 20px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  @media (min-width: 500px) {
+    .home-hero {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .feature {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+    
+    .special {
+      grid-column: 1;
+      grid-row: 3 / 6;
+    }
+    .amazing {
+      grid-column: 1;
+      grid-row: 6;
+    }
+    .cta {
+      grid-column: 2;
+      grid-row: 5 / 7;
+    }
+  }
+  
+  @media (min-width: 800px) {
+     .home-hero {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: minmax(150px, auto) minmax(150px, auto);
+      grid-auto-rows: minmax(100px, auto);
+    }
+    .feature {
+      grid-column: 1 ;
+      grid-row: 1 / 6;
+    }
+    
+    .special {
+      grid-column: 2;
+      grid-row: 1 / 4;
+    }
+    .amazing {
+      grid-column: 2;
+      grid-row: 4 / 6;
+    }
+    .cta {
+      grid-column: 3;
+      grid-row: 3 / 6;
+    }
+  }
+
+
+    
