@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+
+.header {
+  height: 100vh;
+  background-image: 
+  linear-gradient(to right bottom, 
+ rgba(76, 216, 255, 0.8),
+ rgba(30, 108, 217, 0.8)),
+ url(https://a.cdn-hotels.com/gdcs/production9/d482/99f71ade-8bd5-4646-b0a3-4a5053aaf9a5.jpg);
+  
+background-size: cover;
+  background-position: top;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+font-size: 14px;
+}
+
+ 
+.card-image {
+    display: block;
+    min-height: 20rem; 
+    background: #fff center center no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+  }
+  
+  .card-image > img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    
+  }
+  
+  .card-image.is-loaded {
+    filter: none; 
+    transition: filter 1s;
+  }
+  
+  
+  
+  
+ 
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  .card-list {
+    display: block;
+    margin: 1rem auto;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    list-style: none;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 90%;
+    max-width: 20rem;
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  }
+  
+  .card:hover {
+    transform: translateY(-0.5rem) scale(1.0125);
+    box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+  }
+  
+  .card-description {
+    display: block;
+    padding: 1em 0.5em;
+    color: #515151;
+    text-decoration: none;
+  }
+  
+  .card-description > h2 {
+    margin: 0 0 0.5em;
+  }
+  
+  .card-description > p {
+    margin: 0;
+  }
+
+     
